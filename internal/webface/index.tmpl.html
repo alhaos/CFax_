@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fax Confirmation Page</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+
+<table>
+    <caption>Fax Confirmation Page</caption>
+    <tr>
+        <th>Date</th>
+        <th>Filename</th>
+    <th>Client Name</th>
+    <th>Status</th>
+    <th>JobID</th>
+    </tr>
+    {{range . }}
+    <tr>
+        <td>{{.Date}}</td>
+    <td>{{.Filename}}</td>
+    <td>{{.ClientName}}</td>
+    <td>{{.Status}}</td>
+    <td>{{.JobID}}</td>
+    </tr>
+    {{end}}
+</table>
+</body>
+
+</html>
